@@ -192,6 +192,10 @@ class Public < Sinatra::Base
     erb :abtest_manual
   end
 
+  get '/aria' do
+    erb :aria
+  end
+
   helpers do
     def protected!
       return if authorized?
